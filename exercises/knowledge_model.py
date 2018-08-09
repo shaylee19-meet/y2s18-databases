@@ -12,6 +12,20 @@ class Knowledge(Base):
 	# the name of the Wiki article that you're referencing
 	# The third column will be a string representing the 
 	# topic of the article. The last column will be
-	# an integer, representing your rating of the article.
-
-	pass
+    __tablename__="knowledge"
+    knowledge_id=Column(Integer,primarykey=TRUE)
+    topic=Column(String)
+    title=Column(String)
+    rating=Column(Integer)
+    def __repr__(self):
+        return ("knowledge id{}"
+        "topic{}"
+        "title{}".format)
+        "rating{}"
+        self.knowledge_id
+        self.topic
+        self.title
+        self.rating
+        first=knowledge(topic="weter", title="rainbow", rating=9)
+        if first=true:
+            print"(read this articl")
